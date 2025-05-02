@@ -1,0 +1,50 @@
+basic:
+    name: 'https://woelfl-gmbh.de'
+    environments:
+        production: 'https://woelfl-gmbh.de'
+        staging: ''
+        development: ''
+    breakpoints:
+        - 640
+        - 1024
+        - 1200
+    pages:
+        - /
+        - /referenzen
+        - /marken
+        - /beratung
+        - /komplettumbauten
+        - /fussboden
+        - /polsterei
+        - /vorhange
+        - /sonnen-und-insektenschutz
+        - /akustik
+        - /wandgestaltung
+        - /karriere
+        - /bewerbungsformular
+        - /kontakt
+    monitoring:
+        days: {  }
+        type: daily
+        schedule_time: '01:30 PM'
+        schedule_time_zone: Europe/Berlin
+        compare_with: last-production
+        compare_with_fresh: production
+advanced:
+    mask: ''
+    remove: ''
+    isolate: ''
+    delay: 15
+    scroll: true
+    headers:
+        - { header: '', value: '' }
+    cookies: ''
+    custom_js: ''
+    custom_css: ''
+    mock_content: ''
+    performance:
+        workers_production: 30
+        workers_nonproduction: 10
+        workers_production_delay: 0
+        workers_nonproduction_delay: 0
+    stabilize: true
